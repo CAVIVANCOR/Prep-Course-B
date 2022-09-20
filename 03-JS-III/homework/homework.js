@@ -43,11 +43,16 @@ function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  var acumulador = 0
+  /*var acumulador = 0
   for(elemento of array){
     acumulador = acumulador + elemento;
   }
-  return acumulador;
+  return acumulador;*/
+  var total = array.reduce(function(acumulador, valor){
+    return acumulador + valor;
+  })
+  return total;
+
 }
 
 function numeroDigitos(num){
